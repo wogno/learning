@@ -10,11 +10,10 @@ def find(url=user_rep, extension=PICTURE_EXTENSION):
     for dirpath, pathname, filename in os.walk(url):
         try:
             for files in filename:
-                if files[files.index("."): ] in EXTENSION:
-                    liste_all_media.append(os.path.join(dirpath, files))
+                if files[files.index("."): ] in extension:
+                    liste_all_madia.append(os.path.join(dirpath, files))
         except:
             pass
-   return liste_all_madia
+    return liste_all_madia
 
-                
-        
+
