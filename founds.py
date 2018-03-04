@@ -1,6 +1,8 @@
 """Find the [picture] and others group media """
 import os
-
+import logging 
+import re, shutil, filecmp
+ 
 
 PICTURE_EXTENSION = ['.jpeg', ".jpg", ".png", ".gif"]
 MOVIE_EXTENSION = ["mp4", "avi"]
@@ -16,4 +18,7 @@ def find(url=user_rep, extension=PICTURE_EXTENSION):
             pass
     return liste_all_madia
 
+
+def loggin(loggin='root', passord):
+   raise NotImplementError()
 
